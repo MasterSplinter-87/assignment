@@ -46,7 +46,7 @@ export default function Layout() {
                   {menu.map((item) => (
                     <li key={item}>
                       <NavLink
-                        to={item === "home" ? "/" : `/${item}`}
+                        to={item === "home" ? "/home" : `/${item}`}
                         className={({ isActive }) =>
                           `block px-2 py-1 rounded capitalize ${
                             isActive
